@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals/screens/filters_screen.dart';
 import './screens/tabs_screen.dart';
 import './screens/meal_detail_screen.dart';
 import './screens/category_meals_screen.dart';
@@ -41,6 +42,7 @@ class _MyAppState extends State<MyApp> {
       routes: {
         '/':(context) => TabScreen(),
         '/category-meals': (context) => CategoryMealsScreen(),
+        FilterScreen.routeName: (context) => FilterScreen(),
         MealDetailScreen.routeName: (context) => MealDetailScreen(),
       },// set root screen
     );
